@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "angular-drag-and-drop-lists": "^2.1.0",
+    "angular-material": "^1.2.4",
+    "angularjs": "^0.0.1"
+  }
+}

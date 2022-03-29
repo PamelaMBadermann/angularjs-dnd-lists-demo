@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="dragAndDrop" lang="pt-BR">
+
+<head>
+    <title>Drag and Drop</title>
+    <link rel="stylesheet" type="text/css" href="./css/app.css">
+    <link rel="stylesheet" type="text/css" href="./node_modules/angular-material/angular-material.min.css">
+</head>
+
+<body ng-controller="mainController">
+    <md-card flex="60" class="jumbotron">
+        <div flex-direction="column">
+            <md-card-title ng-bind="app"></md-card-title>
+            <md-card-content>
+                <div ng-repeat="item in items" ng-bind="item.text"></div>
+            </md-card-content>
+        </div>
+    </md-card>
+    <div ng-include=" './view/footer.html' "></div>
+    <script src="./lib/angular/angular.min.js"></script>
+    <script src="./lib/angular/angular-locale_pt-br.js"></script>
+    <script src="./lib/angular/angular-messages.min.js"></script>
+    <script src="./node_modules/angular-material/angular-material.min.js"></script>
+    <script src="./js/mainController.js"></script>
+</body>
+
+</html>

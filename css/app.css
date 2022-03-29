@@ -1,0 +1,6 @@
+.jumbotron {
+    display: flex;
+    background-color: #e9ecef;
+    padding: 20px 10px;
+    margin: 20px;
+}
