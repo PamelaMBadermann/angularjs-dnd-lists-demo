@@ -4,3 +4,33 @@
     padding: 20px 10px;
     margin: 20px;
 }
+
+.dragthing {
+    background: lightgrey;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    cursor: pointer;
+    width: 250px;
+    list-style: none;
+}
+
+.jumbotron ul[dnd-list] {
+    min-height: 60vh;
+    padding-left: 0px;
+}
+
+.jumbotron .dndPlaceholder {
+    background-color: #ddd;
+    padding: 20px;
+    margin: 20px;
+    display: block;
+    min-height: 42px;
+    max-width: 250px;
+    list-style: none;
+}
+
+.dndDraggingSource {
+    display: none;
+    /* opacity: 0.5; */
+}
