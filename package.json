@@ -1,5 +1,5 @@
 {
-  "name": "angularjs-dnd-lists-demo",
+  "name": "angular-js-dnd-lists-demo",
   "version": "0.1.0",
   "dependencies": {
     "angular-drag-and-drop-lists": "^2.1.0",
