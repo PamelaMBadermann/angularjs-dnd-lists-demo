@@ -1,6 +1,6 @@
 angular.module("dragAndDrop", ["dndLists"]);
 angular.module("dragAndDrop").controller("mainController", function ($scope,) {
-    $scope.app = "AngularJS drag and drop lists";
+    $scope.app = "AngularJS drag-and-drop-lists directives";
 
     $scope.items = [
         {
@@ -21,16 +21,9 @@ angular.module("dragAndDrop").controller("mainController", function ($scope,) {
         },
     ];
 
-    // $scope.dropCallback = function (event, index, item, external, type, allowedType) {
-    //     if (external) {
-    //         return false;
-    //     }
-    //     return item;
-    // };
-
-    // $scope.dropCallback = function(index, item, external, type) {
-    //     $scope.logListEvent('dropped at', index, external, type);
-    //     // Return false here to cancel drop. Return true if you insert the item yourself.
-    //     return item;
-    // };
+    $scope.dropCallback = function (index, item, external, items) {
+        console.log('dropped at', index, external);
+        console.log(items)
+        return item;
+    };
 });

@@ -9,13 +9,18 @@
 
 <body ng-controller="mainController">
     <md-card flex="60" class="jumbotron" flex-direction="column">
-        <md-card-title ng-bind="app"></md-card-title>
-        <md-card-content dnd-list="items" dnd-horizontal-list="true">
+        <md-card-title>
+            <h2>{{app}}</h2>
+        </md-card-title>
+        <md-card-content dnd-list="items" dnd-horizontal-list="true"
+            dnd-drop="dropCallback(index, item, external, items)">
             <div ng-repeat="item in items" ng-bind="item.text" dnd-draggable="item" dnd-moved="items.splice($index, 1)"
                 class="dragthing"></div>
         </md-card-content>
     </md-card>
     <div ng-include=" './view/footer.html' "></div>
+    <!-- <script src="./node_modules/angular/angular.min.js"></script> -->
+    <!-- <script src="./node_modules/angular-messages/angular-messages.min.js"></script> -->
     <script src="./lib/angular/angular.min.js"></script>
     <script src="./lib/angular/angular-locale_pt-br.js"></script>
     <script src="./lib/angular/angular-messages.min.js"></script>
